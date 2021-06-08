@@ -5,7 +5,21 @@
     "description": "Enter description about your API here\n\nContact Support:\n Name: Your name",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
   },
-  "item": [],
+  "item": [
+    {
+      "name": "demo",
+      "id": "c2cf5820-76fe-48b6-a626-c094d6676c23",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "test"
+      },
+      "response": []
+    }
+  ],
   "variable": [
     {
       "id": "c28cbeaa-6e6e-40c5-ac11-38d49dcfaf17",
