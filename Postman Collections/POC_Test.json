@@ -1,0 +1,122 @@
+{
+  "info": {
+    "_postman_id": "67f5dd63-a053-4a9c-9c1a-356cb29a366b",
+    "name": "Demo_Collection",
+    "description": "Enter description about your API here\n\nContact Support:\n Name: Your name",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get User",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "1aa93098-e301-471a-b875-f4252663e238",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "_postman_id": "47add335-ab53-422a-97e8-7c748d7213ff",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{url}}/user",
+        "description": "Sample endpoint: Returns details about a particular user"
+      },
+      "response": [
+        {
+          "id": "c09c10d5-9439-41e4-b9b0-8e52459629e1",
+          "name": "Sample response: Details about a user by ID",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": "{{baseUrl}}/user"
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "cookie": [],
+          "responseTime": null,
+          "body": "[\n {\n  \"name\": \"in voluptate pariat\",\n  \"id\": -56999647,\n  \"tag\": \"adipisicing tempor Lorem dolore sunt\"\n },\n {\n  \"name\": \"aliquip non\",\n  \"id\": 83415069,\n  \"tag\": \"qui dolor eu\"\n }\n]"
+        }
+      ]
+    },
+    {
+      "name": "create user",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "dda97caa-2e3b-43c2-85ad-0935f288eef8",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "_postman_id": "22c86616-e494-4b26-9278-b0dcb82bb7c3",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{url}}/user?id=123",
+          "host": [
+            "{{url}}"
+          ],
+          "path": [
+            "user"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "123"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "demo",
+      "_postman_id": "c2cf5820-76fe-48b6-a626-c094d6676c23",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "test"
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "id": "c28cbeaa-6e6e-40c5-ac11-38d49dcfaf17",
+      "key": "baseUrl",
+      "value": "http://localhost:3000/api",
+      "type": "string"
+    }
+  ]
+}
