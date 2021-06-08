@@ -7,56 +7,6 @@
   },
   "item": [
     {
-      "name": "Get User",
-      "event": [
-        {
-          "listen": "test",
-          "script": {
-            "id": "1aa93098-e301-471a-b875-f4252663e238",
-            "exec": [
-              "pm.test(\"Status code is 200\", function () {",
-              "    pm.response.to.have.status(200);",
-              "});"
-            ],
-            "type": "text/javascript"
-          }
-        }
-      ],
-      "_postman_id": "47add335-ab53-422a-97e8-7c748d7213ff",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "GET",
-        "header": [],
-        "url": "{{url}}/user",
-        "description": "Sample endpoint: Returns details about a particular user"
-      },
-      "response": [
-        {
-          "id": "c09c10d5-9439-41e4-b9b0-8e52459629e1",
-          "name": "Sample response: Details about a user by ID",
-          "originalRequest": {
-            "method": "GET",
-            "header": [],
-            "url": "{{baseUrl}}/user"
-          },
-          "status": "OK",
-          "code": 200,
-          "_postman_previewlanguage": "json",
-          "header": [
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            }
-          ],
-          "cookie": [],
-          "responseTime": null,
-          "body": "[\n {\n  \"name\": \"in voluptate pariat\",\n  \"id\": -56999647,\n  \"tag\": \"adipisicing tempor Lorem dolore sunt\"\n },\n {\n  \"name\": \"aliquip non\",\n  \"id\": 83415069,\n  \"tag\": \"qui dolor eu\"\n }\n]"
-        }
-      ]
-    },
-    {
       "name": "create user",
       "event": [
         {
@@ -72,7 +22,7 @@
           }
         }
       ],
-      "_postman_id": "22c86616-e494-4b26-9278-b0dcb82bb7c3",
+      "id": "22c86616-e494-4b26-9278-b0dcb82bb7c3",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -99,7 +49,7 @@
     },
     {
       "name": "demo",
-      "_postman_id": "c2cf5820-76fe-48b6-a626-c094d6676c23",
+      "id": "c2cf5820-76fe-48b6-a626-c094d6676c23",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
