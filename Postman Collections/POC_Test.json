@@ -8,6 +8,20 @@
   "item": [
     {
       "name": "Get customers",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "f4fd4a97-7a58-4388-98dd-cb862914f55b",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
       "id": "6639f596-e3c2-4780-aa8c-edf568ff4c96",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
@@ -15,7 +29,7 @@
       "request": {
         "method": "GET",
         "header": [],
-        "url": null
+        "url": "https://api-101.glitch.me/customers"
       },
       "response": []
     }
