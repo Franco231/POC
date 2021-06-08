@@ -7,15 +7,15 @@
   },
   "item": [
     {
-      "name": "demo",
-      "id": "c2cf5820-76fe-48b6-a626-c094d6676c23",
+      "name": "New Request",
+      "id": "6639f596-e3c2-4780-aa8c-edf568ff4c96",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
       "request": {
         "method": "GET",
         "header": [],
-        "url": "test"
+        "url": null
       },
       "response": []
     }
