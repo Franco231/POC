@@ -5,62 +5,7 @@
     "description": "Enter description about your API here\n\nContact Support:\n Name: Your name",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
   },
-  "item": [
-    {
-      "name": "create user",
-      "event": [
-        {
-          "listen": "test",
-          "script": {
-            "id": "dda97caa-2e3b-43c2-85ad-0935f288eef8",
-            "exec": [
-              "pm.test(\"Status code is 200\", function () {",
-              "    pm.response.to.have.status(200);",
-              "});"
-            ],
-            "type": "text/javascript"
-          }
-        }
-      ],
-      "id": "22c86616-e494-4b26-9278-b0dcb82bb7c3",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "POST",
-        "header": [],
-        "url": {
-          "raw": "{{url}}/user?id=123",
-          "host": [
-            "{{url}}"
-          ],
-          "path": [
-            "user"
-          ],
-          "query": [
-            {
-              "key": "id",
-              "value": "123"
-            }
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "demo",
-      "id": "c2cf5820-76fe-48b6-a626-c094d6676c23",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "GET",
-        "header": [],
-        "url": "test"
-      },
-      "response": []
-    }
-  ],
+  "item": [],
   "variable": [
     {
       "id": "c28cbeaa-6e6e-40c5-ac11-38d49dcfaf17",
